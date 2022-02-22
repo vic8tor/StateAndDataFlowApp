@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57D2868427C510790018771E /* RegistrerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868327C510790018771E /* RegistrerView.swift */; };
+		57D2868627C511D00018771E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868527C511D00018771E /* UserManager.swift */; };
+		57D2868827C51B2D0018771E /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868727C51B2D0018771E /* StarterView.swift */; };
 		57EE6E9227C40876009C171F /* StateAndDataFlowAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE6E9127C40876009C171F /* StateAndDataFlowAppApp.swift */; };
 		57EE6E9427C40876009C171F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE6E9327C40876009C171F /* ContentView.swift */; };
 		57EE6E9627C40877009C171F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EE6E9527C40877009C171F /* Assets.xcassets */; };
 		57EE6E9927C40877009C171F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EE6E9827C40877009C171F /* Preview Assets.xcassets */; };
+		57EE6EA027C40C47009C171F /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE6E9F27C40C47009C171F /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57D2868327C510790018771E /* RegistrerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerView.swift; sourceTree = "<group>"; };
+		57D2868527C511D00018771E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		57D2868727C51B2D0018771E /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		57EE6E8E27C40876009C171F /* StateAndDataFlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EE6E9127C40876009C171F /* StateAndDataFlowAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowAppApp.swift; sourceTree = "<group>"; };
 		57EE6E9327C40876009C171F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57EE6E9527C40877009C171F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57EE6E9827C40877009C171F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57EE6E9F27C40C47009C171F /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				57EE6E9127C40876009C171F /* StateAndDataFlowAppApp.swift */,
 				57EE6E9327C40876009C171F /* ContentView.swift */,
+				57EE6E9F27C40C47009C171F /* TimeCounter.swift */,
+				57D2868327C510790018771E /* RegistrerView.swift */,
+				57D2868727C51B2D0018771E /* StarterView.swift */,
+				57D2868527C511D00018771E /* UserManager.swift */,
 				57EE6E9527C40877009C171F /* Assets.xcassets */,
 				57EE6E9727C40877009C171F /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D2868427C510790018771E /* RegistrerView.swift in Sources */,
+				57EE6EA027C40C47009C171F /* TimeCounter.swift in Sources */,
+				57D2868827C51B2D0018771E /* StarterView.swift in Sources */,
 				57EE6E9427C40876009C171F /* ContentView.swift in Sources */,
+				57D2868627C511D00018771E /* UserManager.swift in Sources */,
 				57EE6E9227C40876009C171F /* StateAndDataFlowAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
