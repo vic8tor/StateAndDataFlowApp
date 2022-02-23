@@ -19,13 +19,13 @@ struct RegistrerView: View {
                 TextField("Enter your name", text: $name)
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
-                Text("3")
-                    .foregroundColor(validateData().0)
+                Text("\(name.count)")
+                    .foregroundColor(validateData().color)
             }
             Button(action: registerUser) {
                 Label("Ok", systemImage: "checkmark.circle")
             }
-            .disabled(validateData().1)
+            .disabled(validateData().state)
             
         }
     }
@@ -33,18 +33,20 @@ struct RegistrerView: View {
 
 extension RegistrerView {
     private func registerUser() {
-        if !name.isEmpty {
+        if name.count >= 3 {
             user.name = name
-            user.isRegister.toggle()
+            user.isRegistred.toggle()
         }
     }
     
-    private func validateData() -> (Color, Bool) {
+    private func validateData() -> (color: Color, state: Bool) {
         let color = name.count < 3
         ? Color.red
         : Color.green
         
-        let buttonState = color == .red ? true : false
+        let buttonState = color == .red
+        ? true
+        : false
         return (color, buttonState)
     }
 }

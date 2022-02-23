@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57AB360827C552340040959E /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB360727C552340040959E /* ButtonModifier.swift */; };
+		57AB360D27C565C50040959E /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB360C27C565C50040959E /* TextModifier.swift */; };
+		57AB361027C575830040959E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB360F27C575830040959E /* ButtonView.swift */; };
 		57D2868427C510790018771E /* RegistrerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868327C510790018771E /* RegistrerView.swift */; };
 		57D2868627C511D00018771E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868527C511D00018771E /* UserManager.swift */; };
 		57D2868827C51B2D0018771E /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2868727C51B2D0018771E /* StarterView.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57AB360727C552340040959E /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		57AB360C27C565C50040959E /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		57AB360F27C575830040959E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		57D2868327C510790018771E /* RegistrerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerView.swift; sourceTree = "<group>"; };
 		57D2868527C511D00018771E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		57D2868727C51B2D0018771E /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57AB360927C552420040959E /* Custom Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				57AB360727C552340040959E /* ButtonModifier.swift */,
+				57AB360C27C565C50040959E /* TextModifier.swift */,
+			);
+			path = "Custom Modifiers";
+			sourceTree = "<group>";
+		};
+		57AB360A27C5655B0040959E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57D2868727C51B2D0018771E /* StarterView.swift */,
+				57D2868327C510790018771E /* RegistrerView.swift */,
+				57AB360F27C575830040959E /* ButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57AB360B27C565690040959E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				57D2868527C511D00018771E /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		57AB360E27C567670040959E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57EE6E9127C40876009C171F /* StateAndDataFlowAppApp.swift */,
+				57EE6E9327C40876009C171F /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57AB361127C57A8F0040959E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57EE6E9527C40877009C171F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		57EE6E8527C40876009C171F = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +109,12 @@
 		57EE6E9027C40876009C171F /* StateAndDataFlowApp */ = {
 			isa = PBXGroup;
 			children = (
-				57EE6E9127C40876009C171F /* StateAndDataFlowAppApp.swift */,
-				57EE6E9327C40876009C171F /* ContentView.swift */,
 				57EE6E9F27C40C47009C171F /* TimeCounter.swift */,
-				57D2868327C510790018771E /* RegistrerView.swift */,
-				57D2868727C51B2D0018771E /* StarterView.swift */,
-				57D2868527C511D00018771E /* UserManager.swift */,
-				57EE6E9527C40877009C171F /* Assets.xcassets */,
+				57AB360A27C5655B0040959E /* View */,
+				57AB360E27C567670040959E /* App */,
+				57AB360927C552420040959E /* Custom Modifiers */,
+				57AB360B27C565690040959E /* Managers */,
+				57AB361127C57A8F0040959E /* Resources */,
 				57EE6E9727C40877009C171F /* Preview Content */,
 			);
 			path = StateAndDataFlowApp;
@@ -149,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AB361027C575830040959E /* ButtonView.swift in Sources */,
 				57D2868427C510790018771E /* RegistrerView.swift in Sources */,
+				57AB360D27C565C50040959E /* TextModifier.swift in Sources */,
+				57AB360827C552340040959E /* ButtonModifier.swift in Sources */,
 				57EE6EA027C40C47009C171F /* TimeCounter.swift in Sources */,
 				57D2868827C51B2D0018771E /* StarterView.swift in Sources */,
 				57EE6E9427C40876009C171F /* ContentView.swift in Sources */,

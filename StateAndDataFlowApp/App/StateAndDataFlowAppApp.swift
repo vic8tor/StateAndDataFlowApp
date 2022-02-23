@@ -15,6 +15,7 @@ struct StateAndDataFlowAppApp: App {
         WindowGroup {
             StarterView()
                 .environmentObject(userManager)
+                .previewDevice("iPhone 13 Pro Max")
         }
     }
 }
