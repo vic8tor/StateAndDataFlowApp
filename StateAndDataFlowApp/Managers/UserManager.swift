@@ -16,6 +16,7 @@ class UserManager: ObservableObject {
             UserDefaults.standard.set(isRegistred, forKey: "isRegistred")
         }
     }
+    
     @Published var name: String {
         didSet {
             UserDefaults.standard.set(name, forKey: "name")

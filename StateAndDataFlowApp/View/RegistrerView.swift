@@ -39,15 +39,14 @@ extension RegistrerView {
         }
     }
     
+    private func validate() -> Bool {
+        let result = name.count < 3 ? true : false
+        return result
+    }
+    
     private func validateData() -> (color: Color, state: Bool) {
-        let color = name.count < 3
-        ? Color.red
-        : Color.green
-        
-        let buttonState = color == .red
-        ? true
-        : false
-        return (color, buttonState)
+        let result: (Color, Bool) = validate() ? (.red, true) : (.green, false)
+        return result
     }
 }
 
